@@ -17,8 +17,15 @@
     width: 120px;
     height: auto;
     padding: 1rem 0;
+    
 }
 
+.logo-bar {
+    
+  position: absolute;
+  top: 0;
+         
+}
 .menus {
     width: 60%;
     height: auto;
@@ -94,13 +101,7 @@
 
 }
 
-.logo-bar {
-    position: absolute
-    width: 120px;
-    height: auto;
-    padding: 1rem 0;
-        
-}
+
 
 
 .hero-button:hover {
