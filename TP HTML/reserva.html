@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reserva de Restaurante</title>
+    <link rel="stylesheet" type="text/css" href="styles/reserva.css">
+</head>
+<body>
+    <h1>Reservaciones</h1>
+    <form id="reserva-form">
+        <label for="comensales">¿Cuántos comensales serán?</label>
+        <select id="comensales" name="comensales">
+            <option value="1">1 comensal</option>
+            <option value="2">2 comensales</option>
+            <option value="3">3 comensales</option>
+            <option value="4">4 comensales</option>
+            <option value="5">5 comensales</option>
+            <option value="6">+ de 5 comensales</option>
+        </select>
+
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <label>Preferencia de Servicio:</label>
+        <label for="almuerzo">Almuerzo</label>
+        <input type="radio" id="almuerzo" name="preferencia" value="almuerzo">
+        <label for="cena">Cena</label>
+        <input type="radio" id="cena" name="preferencia" value="cena">
+
+        <button type="submit">Reservar</button>
+    </form>
+
+    <div id="reserva-confirmacion" style="display: none;">
+        <p>Reserva confirmada:</p>
+        <p>Comensales: <span id="confirmacion-comensales"></span></p>
+        <p>Fecha: <span id="confirmacion-fecha"></span></p>
+        <p>Preferencia de Servicio: <span id="confirmacion-preferencia"></span></p>
+    </div>
+
+    <script src="scripts/reserva.js"></script>
+</body>
+</html> 
