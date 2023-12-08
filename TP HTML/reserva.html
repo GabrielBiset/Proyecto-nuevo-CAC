@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <title>Reserva de Restaurante</title>
     <link rel="stylesheet" type="text/css" href="styles/reserva.css">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: url("https://sirviella.com/noticias/wp-content/uploads/2019/11/decoracion_mesa_restaurante.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #reserva-form {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco para el formulario */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    }
+    #reserva-confirmacion {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco para el formulario */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px; /* Puedes ajustar el ancho según tus necesidades */
+    }
+
+</style>    
 </head>
 <body>
     <h1>Reservaciones</h1>
@@ -26,7 +51,8 @@
         <input type="radio" id="almuerzo" name="preferencia" value="almuerzo">
         <label for="cena">Cena</label>
         <input type="radio" id="cena" name="preferencia" value="cena">
-
+        <label for="nombre-reserva">Nombre de quien reserva:</label>
+        <input id="nombre-reserva" value=" ">
         <button type="submit">Reservar</button>
     </form>
 
@@ -35,6 +61,7 @@
         <p>Comensales: <span id="confirmacion-comensales"></span></p>
         <p>Fecha: <span id="confirmacion-fecha"></span></p>
         <p>Preferencia de Servicio: <span id="confirmacion-preferencia"></span></p>
+        <p>Nombre de quien reserva: <span id="confirmacion-nombre"></span></p>
     </div>
 
     <script src="scripts/reserva.js"></script>
