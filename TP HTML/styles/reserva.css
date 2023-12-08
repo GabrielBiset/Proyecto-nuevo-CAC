@@ -4,6 +4,16 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px; /* Espacio alrededor del h1 */
+    padding: 20px;    
+    color: #fff;
+}
+
 form {
     display: inline-block;
     text-align: left;
