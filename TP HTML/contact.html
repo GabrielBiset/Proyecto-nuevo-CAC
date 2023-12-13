@@ -5,82 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/contact.css">
-  <title>Contactanos...</title>
+  <title>Contacto</title>
 </head>
-  <header>
-    <nav class="navbar">    
-        <div class="brand">
-          <img class="titulo" src= "assets/logo_text.png" />
-        </div>
-  <div class="contact_form">
 
-    <div class="formulario">
-      <h1>Formulario de contacto</h1>
-      <h3>Escríbenos y en breve nos pondremos en contacto contigo,
-        Gracias!!!
-      </h3>
+<body>
 
+  <div class="formulario">
+    <h1>Formulario de Contacto RESTAURANTE     
+          IL MATTERELLO </h1>
 
-      <form action="submeter-formulario.php" method="post">
+    <form id="contactForm">
+      <p>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+"
+          title="Solo se permiten letras y espacios">
+      </p>
 
+      <p>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+"
+          title="Solo se permiten letras y espacios">
+      </p>
 
-        <p>
-          <label for="nombre" class="colocar_nombre">Nombre
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-            placeholder="Escribe tu nombre">
-        </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          title="Ingrese una dirección de correo electrónico válida">
+      </p>
 
-        <p>
-          <label for="email" class="colocar_email">Email
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
-        </p>
+      <p>
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" required pattern="[0-9]+" title="Solo se permiten números">
+      </p>
 
-        <p>
-          <label for="telefone" class="colocar_telefono">Teléfono
-          </label>
-          <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-        </p>
+      <p>
+        <label for="descripcion">Escriba su mensaje</label>
+        <textarea id="descripcion" required></textarea>
+      </p>
+      <button type="submit" id="enviar">Enviar</button>
 
-        <p>
-          <label for="website" class="colocar_website">Sitio web
-          </label>
-          <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
-        </p>
-
-        <p>
-          <label for="asunto" class="colocar_asunto">Asunto
-            <span class="obligatorio">*</span>
-          </label>
-          <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-            placeholder="Escribe un asunto">
-        </p>
-
-        <p>
-          <label for="mensaje" class="colocar_mensaje">Mensaje
-            <span class="obligatorio">*</span>
-          </label>
-          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
-            placeholder="Deja aquí tu comentario..."></textarea>
-        </p>
-
-        <button type="submit" name="enviar_formulario" id="enviar">
-          <p>Enviar</p>
-        </button>
-
-        <p class="aviso">
-          <span class="obligatorio"> * </span>los campos son obligatorios.
-        </p>
-
-      </form>
-    </div>
+      <div id="mensajeExito" class="exito" style="display: none;"></div>
+    </form>
   </div>
 
-
-  <script src="script.js"></script>
+  <script src="scripts/formulario.js"></script>
 </body>
 
 </html>
