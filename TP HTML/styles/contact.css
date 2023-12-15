@@ -1,4 +1,4 @@
-/* Estilos generales para el formulario */
+
 .formulario {
   max-width: 400px;
   margin: 0 auto;
@@ -13,7 +13,7 @@ h1 {
   color: #333;
 }
 
-/* Estilos para los campos del formulario */
+
 .formulario p {
   margin-bottom: 15px;
 }
@@ -55,7 +55,7 @@ button:hover {
   display: none;
 }
 
-/* Estilo adicional para el cuerpo de la página */
+
 body {
   background-color: #ecf0f1;
   font-family: 'Arial', sans-serif;
