@@ -12,7 +12,7 @@ Este proyecto consiste en el desarrollo de una página web para el restaurante I
 
 ## Funcionalidades
 
-- **Visualización del Menú:** Los usuarios pueden ver una lista completa de los platos disponibles en IL MATARELLO, incluyendo descripciones y precios.
+- **Visualización del Menú:** Los usuarios pueden ver una lista completa de los platos disponibles en IL MATARELLO, incluyendo descripciones .
 - **Sistema de Reservas:** Los usuarios pueden seleccionar una fecha y hora para reservar una mesa en el restaurante.
 - **Base de Datos en SQL:** Gestión de la información de los platos y las reservas mediante una base de datos SQL.
 
